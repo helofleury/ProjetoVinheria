@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Incluindo o CSS do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Incluindo o seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ícone da guia -->
+    <link rel="shortcut icon" href="img/icone1.png">
+    <title>Projeto Vinharia</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <!-- Barra de Navegação -->
+        <nav class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a href="#homer">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="produtos.html">Vinhos</a>
+                    <!-- Submenu de Vinhos -->
+                </li>
+                <li class="dropdown">
+                    <a href="#">Receitas</a>
+                    <!-- Submenu de Receitas Doces e Salgados -->
+                    <ul class="dropdown-content">
+                        <li><a href="receitas.html">Salgado</a></li>
+                        <li><a href="doces.html">Doce</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="harmonia.html">Harmonização</a></li>
+                <!-- Submenu de Harmonização -->
+                <li class="dropdown"><a href="#fundodiv">Contato</a></li>
+                <!-- Submenu de Contatos -->
+            </ul>
+        </nav>
+        <!-- Ícones -->
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+        <!-- Formulário de busca -->
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+    <!-- Conteúdo principal de Apresentação da Página -->
+    <div id="homer">
+        <img src="img/adega4.webp" alt="Adega">
+        <p class="texto">  Bem-vindo à Vinheria Agnello!
+            Na Vinheria Agnello, convidamos você a embarcar em uma jornada inesquecível pelo mundo dos vinhos, onde a tradição se encontra com a inovação para criar experiências sensoriais únicas. Situada em meio a paisagens deslumbrantes e vinhedos exuberantes, nossa vinheria é um refúgio para os apreciadores de vinho, onde a paixão pela vinificação é celebrada em cada garrafa que produzimos.
+            A história da Vinheria é uma história de amor pela terra e pelas uvas, uma tradição que se estende por gerações. Cada vinho que elaboramos é uma homenagem à riqueza da terra e ao talento dos nossos enólogos, resultando em vinhos que expressam o caráter único das nossas vinhas.
+        </p>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+        <div id="fundodiv">
+            <!-- Informações de contato -->
+            <div class="footer-col">
+                <h4>Contatos</h4>
+                <ul>
+                    <li><a href="#">SAC</a></li>
+                    <li><a href="#">(11) XXXXX-XXXX</a></li>
+                    <li><a href="#">vinheriaagnello@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- Responsáveis pelo Site-->
+            <div class="footer-col">
+                <h4>Responsáveis:</h4>
+                <ul>
+                    <li><a href="#">Heloísa Fleury</a></li>
+                    <li><a href="#">Juan Rufino</a></li>
+                    <li><a href="#">Julia Ferreira</a></li>
+                    <li><a href="#">Pedro Batista</a></li>
+                </ul>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!-- Formulário de contato -->
+                <div class="container">
+                    <div class="footer-contact">
+                        <h3>Entre em Contato</h3>
+                        <form action="dados.html" method="get">
+                            <!--<form action="#" method="post">-->
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Direitos autorais -->
+                <div>
+                    <p class="direitos">@ Todos os direitos reservados 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
